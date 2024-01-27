@@ -10,6 +10,7 @@ import Details from '../screens/Details';
 import Location from '../screens/Location';
 import ManageUser from '../screens/ManageUser';
 import TabNavigation from './TabNavigation';
+import useFirbaseNotifications from '../hooks/useFirbaseNotifications';
 
 type MainNavigationProps = {};
 const Stack = createStackNavigator();
@@ -17,6 +18,7 @@ const Stack = createStackNavigator();
 const MainNavigation: FC<MainNavigationProps> = () => {
   const {data} = useJwt();
   useUser();
+  useFirbaseNotifications();
 
   useEffect(() => {
     if (data !== undefined) {
