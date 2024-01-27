@@ -1,5 +1,5 @@
 {
-  "name": "zeal",
+  "name": "utopia",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,6 +11,8 @@
     "setup": "yarn install && npx pod-install"
   },
   "dependencies": {
+    "@react-native-firebase/analytics": "^18.8.0",
+    "@react-native-firebase/app": "^18.8.0",
     "@react-navigation/bottom-tabs": "^6.5.11",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
