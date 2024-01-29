@@ -6,4 +6,7 @@ export default Object.freeze({
   EditUser: 'Edit User',
   AddUser: 'Add User',
   AddLocation: 'Add Location',
+  Notification: 'Notification',
+  Visitors: 'Visitors',
+  LostItems: 'Lost Items',
 });

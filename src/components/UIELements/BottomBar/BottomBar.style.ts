@@ -14,10 +14,10 @@ export default StyleSheet.create({
     paddingBottom: 24 * unit,
     marginHorizontal: 20 * unit,
     borderRadius: 32 * unit,
-    marginLeft: 28 * unit,
+    // marginLeft: 28 * unit,
   },
   item: {
-    flexBasis: '25%',
+    flexBasis: '50%',
     alignItems: 'center',
   },
   text: {

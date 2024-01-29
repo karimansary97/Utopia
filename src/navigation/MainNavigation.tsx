@@ -11,6 +11,9 @@ import Location from '../screens/Location';
 import ManageUser from '../screens/ManageUser';
 import TabNavigation from './TabNavigation';
 import useFirbaseNotifications from '../hooks/useFirbaseNotifications';
+import Notifications from '../screens/Notifications';
+import Visitors from '../screens/Visitors/Visitors';
+import LostItems from '../screens/LostItems/LostItems';
 
 type MainNavigationProps = {};
 const Stack = createStackNavigator();
@@ -37,7 +40,9 @@ const MainNavigation: FC<MainNavigationProps> = () => {
           <Stack.Screen name={routes.Details} component={Details} />
           <Stack.Screen name={routes.AddLocation} component={Location} />
           <Stack.Screen name={routes.EditUser} component={ManageUser} />
-          <Stack.Screen name={routes.AddUser} component={ManageUser} />
+          <Stack.Screen name={routes.Notification} component={Notifications} />
+          <Stack.Screen name={routes.Visitors} component={Visitors} />
+          <Stack.Screen name={routes.LostItems} component={LostItems} />
         </Stack.Group>
       ) : (
         <Stack.Group>

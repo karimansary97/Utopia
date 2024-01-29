@@ -2,11 +2,13 @@
 #import "RNBootSplash.h" 
 #import <Firebase.h>
 #import <React/RCTBundleURLProvider.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [GMSServices provideAPIKey:@"AIzaSyDTJbZ9-DOQNrPtSQoudwl7E0ceBeDa73o"];
   [FIRApp configure];
 
   self.moduleName = @"Zeal";

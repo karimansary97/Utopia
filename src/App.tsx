@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
 import 'react-native-devsettings';
+import {enableLatestRenderer} from 'react-native-maps';
 import analytics from '@react-native-firebase/analytics';
 import {NavigationContainer} from '@react-navigation/native';
 import MainNavigation from './navigation/MainNavigation';
@@ -10,6 +11,7 @@ import {StyleSheet} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {useRef} from 'react';
 
+enableLatestRenderer();
 const App = () => {
   const routeNameRef = useRef<any>();
   const navigationRef = useRef<any>();

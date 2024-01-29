@@ -1,7 +1,8 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
-import {HomeIcon} from '../styles/icons';
+import {HomeIcon, NearbyIcon} from '../styles/icons';
 import BottomBar from '../components/UIELements/BottomBar';
+import Maps from '../screens/Maps/Maps';
 
 const Tab = createBottomTabNavigator();
 const TabNavigation = () => {
@@ -23,33 +24,13 @@ const TabNavigation = () => {
       />
 
       <Tab.Screen
-        key="scan"
-        name="scan"
+        key="map"
+        name="map"
         options={{
-          title: 'Home',
-          tabBarIcon: ({color}) => <HomeIcon color={color} />,
+          title: 'Nearby',
+          tabBarIcon: ({color}) => <NearbyIcon color={color} />,
         }}
-        component={Home}
-      />
-
-      <Tab.Screen
-        key="Help Center"
-        name="Help"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({color}) => <HomeIcon color={color} />,
-        }}
-        component={Home}
-      />
-
-      <Tab.Screen
-        key="more"
-        name="More"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({color}) => <HomeIcon color={color} />,
-        }}
-        component={Home}
+        component={Maps}
       />
     </Tab.Navigator>
   );

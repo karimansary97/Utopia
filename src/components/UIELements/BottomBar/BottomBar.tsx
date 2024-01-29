@@ -8,6 +8,9 @@ import {CommonActions} from '@react-navigation/native';
 import Text from '../Text';
 import addShadow from '../../../styles/addShadow';
 const BottomBar: FC<BottomTabBarProps> = ({state, descriptors, navigation}) => {
+  if (state.index === 1) {
+    return <></>;
+  }
   return (
     <View style={[styles.container, addShadow('sm')]}>
       {state.routes.map((route, index) => {
@@ -33,7 +36,7 @@ const BottomBar: FC<BottomTabBarProps> = ({state, descriptors, navigation}) => {
             {options.tabBarIcon &&
               options.tabBarIcon({
                 focused: isFocused,
-                color: isFocused ? colors.secondary : colors.white,
+                color: isFocused ? colors.smoke : colors.white,
                 size: 0,
               })}
             <Text

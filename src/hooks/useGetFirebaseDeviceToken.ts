@@ -37,7 +37,6 @@ const useGetFirebaseDeviceToken = () => {
     gcTime: Infinity,
     enabled,
   });
-  console.log(x);
 };
 
 export default useGetFirebaseDeviceToken;

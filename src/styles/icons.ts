@@ -6,3 +6,5 @@ export {default as TrashIcon} from '../assets/Trash.svg';
 export {default as EditIcon} from '../assets/Edit.svg';
 export {default as LogOutIcon} from '../assets/LogOutIcon.svg';
 export {default as HomeIcon} from '../assets/Home.svg';
+export {default as NotifyIcon} from '../assets/NotifyIcon.svg';
+export {default as NearbyIcon} from '../assets/nearby.svg';
